@@ -1,0 +1,32 @@
+/* Navbar */
+.fixed-bottom, .fixed-top {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1030;
+  }
+  .fixed-top {
+    top: 0;
+  }
+  .navbar {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    position: relative;
+    font-size: 1.2rem!important;
+    padding: 0.3rem 2rem!important;
+    position: fixed!important;
+    transition: all .3s ease-out 0s!important;
+}
+
+.navbar-brand{
+  font-size: 1.50em!important;
+  margin-right: 2rem;
+}
+
+.dot{
+  color: red;
+}
