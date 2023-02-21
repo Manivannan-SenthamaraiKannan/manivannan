@@ -1,38 +1,35 @@
 import React from 'react'
 import '../../Assets/Styles/Navbar/Navbar.css'
+import "bootstrap/js/src/collapse.js";
 
 const Navbar = () => {
+  // const collapseButtonHandler = () => {
+  // }
   return (
     <nav className="navbar navbar navbar-expand-md navbar-light fixed-top">
       <div className="container">
-        <a className="navbar-brand nav" href="#!">Manivannan<span className='dot'>.</span></a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+        <a className="navbar-brand nav" href="/">M<span className='dot'>.</span></a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <div className="navbar-collapse collapse d-flex justify-content-end" id="navbar">
+          <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#!">Home</a>
+              <a className="nav-link" href="#!"><i class="bi bi-house"></i><span>Home</span></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#!">Link</a>
+              <a className="nav-link" href="#!"><i class="bi bi-person"></i><span>About</span></a>
             </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#!">Action</a></li>
-                <li><a className="dropdown-item" href="#!">Another action</a></li>
-                <li><hr className="dropdown-divider" /></li>
-                <li><a className="dropdown-item" href="#!">Something else here</a></li>
-              </ul>
+            <li className="nav-item">
+              <a className="nav-link" href="#!"><i class="bi bi-laptop"></i><span>Works</span></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#!"><i class="bi bi-vector-pen"></i><span>My Blog</span></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#!"><i class="bi bi-file-text"></i><span>Resume</span></a>
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
